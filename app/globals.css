@@ -19,3 +19,9 @@ a {
 .main {
   padding: 48px 16px 56px 16px;
 }
+
+.title {
+  font-size: 20px;
+  margin-left: 32px;
+  margin-bottom: 22px;
+}

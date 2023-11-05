@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import { PageTemplate } from "../components/PageTemplate";
 
 export default async function Users() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -8,7 +7,7 @@ export default async function Users() {
 
   return (
     <>
-      <PageTemplate text="一覧ページ" />
+      <h3 className="title">一覧ページ</h3>
       <div className={styles.table}>
         <div className={styles["table--header"]}>
           <p className={styles["table--cel__first"]}>ID</p>

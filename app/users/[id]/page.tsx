@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import { PageTemplate } from "../../../components/PageTemplate";
 
 export default async function Detail({ params }: { params: { id: string } }) {
   const res = await fetch(
@@ -9,7 +8,7 @@ export default async function Detail({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <PageTemplate text="詳細ページ" />
+      <h3 className="title">詳細ページ</h3>
       <div className={styles.container}>
         <div className={styles.item}>
           <div className={styles.label}>名前</div>
@@ -33,6 +32,6 @@ export default async function Detail({ params }: { params: { id: string } }) {
         </div>
       </div>
     </>
-    // </PageTemplate>
+    // </PageTitle>
   );
 }
